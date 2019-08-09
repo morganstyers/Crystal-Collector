@@ -6,6 +6,8 @@ magicNumber= Math.floor(Math.random()* (120 - 19)) + 19;
 
 $("#magicNum").text(magicNumber);
 /////////////////////////////////////
+var totalScore= 0;
+
 
 //4 ran integers
 var crystalValue= [];
@@ -42,8 +44,18 @@ $("#crystals").append(crystalFour);
 $(".crystal-image").on("click",function(){
     var crystalValue = ($(this).attr("data-crystal-val"));
     crystalValue = parseInt(crystalValue);
-    console.log(crystalValue)
+    alert(crystalValue);
 
+    crystalValue += totalScore;
+
+    alert("your score is" + totalScore);
+
+    if (totalScore === magicNumber){
+       console.log("win")
+    }
+    else if(totalScore >+ totalScore){
+console.log("lose");
+    }
 })
 });
 
