@@ -3,8 +3,11 @@ $(document).ready(function() {
 var magicNumber;
 var totalScore= 0;
 var crystalValue=[];
+var wins=0;
+var losses= 0;
 
-//number to guess
+//number to guess 19-12
+//Math.floor(Math.random()* (120 - 19)+1)+19;
 magicNumber= Math.floor(Math.random()* (101 + 19));
 $("#magicNum").text(magicNumber);
 
@@ -44,7 +47,19 @@ crystalFour.attr("src","assets/images/drawing-gemstones-mineral-4.png");
 crystalFour.attr("data-crystal-val", crystalValue[3]);
 $("#crystals").append(crystalFour);
 
-
+//game score win
+function gameWin(){
+    $("#userWin").text("win");
+    wins++;
+    $("#wins").text(wins);
+}
+//game score lose
+function gameLoss(){
+    $("#userLoss").text("lose");
+    losses++;
+    $("#losses").text(losses);
+    
+}
 //on click
 $(".crystal-image").on("click",function(){
     var crystalValue = ($(this).attr("data-crystal-val"));
