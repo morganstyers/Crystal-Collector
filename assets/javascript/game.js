@@ -59,14 +59,14 @@ $(document).ready(function () {
      
         if (totalScore === magicNumber) {
             wins++;
-            $("#wins").text(wins);
+            $(" #wins ").text( wins);
             alert("you win");
             reset();
         }
       
         else if (totalScore > magicNumber) {
             losses++;
-            $("#losses").text(losses);
+            $(" #losses ").text(losses);
             alert("you lose");
             reset();
         }
@@ -74,10 +74,10 @@ $(document).ready(function () {
     })
     function reset() {
         totalScore = 0;
-        magicNumber = Math.floor(Math.random() * (101 + 19) -1);
+        magicNumber = Math.floor(Math.random() * (101 + 19));
         var crystalValue = [];
         for (var i = 0; i < 4; i++) {
-        crystalValue.push(Math.floor(Math.random() * 13) + 1)-1;
+        crystalValue.push(Math.floor(Math.random() * 13) + 1);
     }
     $('.totalScore').text(totalScore);
     $("#magicNum").text(magicNumber);
