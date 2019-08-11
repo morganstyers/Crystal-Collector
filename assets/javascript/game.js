@@ -52,10 +52,11 @@ $(document).ready(function () {
         var crystalValue = ($(this).attr("data-crystal-val"));
         crystalValue = parseInt(crystalValue);
       
- 
+        
+
         totalScore += crystalValue;
         $(".totalScore").text(totalScore);
-        
+        alert("this is worth " +crystalValue+" your total score is now "+ totalScore)
         if (totalScore === magicNumber) {
             wins++;
             $("#wins").text(wins);
