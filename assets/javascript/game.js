@@ -74,7 +74,7 @@ $(document).ready(function () {
     })
     function reset() {
         totalScore = 0;
-        magicNumber = Math.floor(Math.random() * (101 + 19)-1);
+        magicNumber = Math.floor(Math.random() * (101 + 19) -1);
         var crystalValue = [];
         for (var i = 0; i < 4; i++) {
         crystalValue.push(Math.floor(Math.random() * 13) + 1)-1;
