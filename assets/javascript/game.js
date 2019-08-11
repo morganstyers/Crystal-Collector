@@ -56,7 +56,7 @@ $(document).ready(function () {
 
         totalScore += crystalValue;
         $(".totalScore").text(totalScore);
-        alert("this is worth " +crystalValue+" your total score is now "+ totalScore)
+     
         if (totalScore === magicNumber) {
             wins++;
             $("#wins").text(wins);
