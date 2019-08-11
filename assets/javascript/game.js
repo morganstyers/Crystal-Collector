@@ -24,26 +24,26 @@ $(document).ready(function () {
     crystalOne.addClass("crystal-image");
     crystalOne.attr("src", "assets/images/gem-transparent-tumblr.png");
     crystalOne.attr("data-crystal-val", crystalValue[0]);
-    $("#crystals").append(crystalOne);
+    $("#crystalOne").append(crystalOne);
     console.log(crystalValue)
 
     var crystalTwo = $("<img>");
     crystalTwo.addClass("crystal-image");
     crystalTwo.attr("src", "assets/images/transparent-mineral-5.png");
     crystalTwo.attr("data-crystal-val", crystalValue[1])
-    $("#crystals").append(crystalTwo);
+    $("#crystalTwo").append(crystalTwo);
 
     var crystalThree = $("<img>");
     crystalThree.addClass("crystal-image");
     crystalThree.attr("src", "assets/images/gem-transparent-tumblr-1.png");
     crystalThree.attr("data-crystal-val", crystalValue[2])
-    $("#crystals").append(crystalThree);
+    $("#crystalThree").append(crystalThree);
 
     var crystalFour = $("<img>");
     crystalFour.addClass("crystal-image");
     crystalFour.attr("src", "assets/images/drawing-gemstones-mineral-4.png");
     crystalFour.attr("data-crystal-val", crystalValue[3]);
-    $("#crystals").append(crystalFour);
+    $("#crystalFour").append(crystalFour);
 
  
     //on click
